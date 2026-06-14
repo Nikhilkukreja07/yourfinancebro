@@ -7,12 +7,9 @@
         <meta name="author" content="" />
         <title>Nikhil Kukreja - yourfinancebro</title>
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
-        <!-- Google fonts-->
         <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css" />
-        <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
     </head>
     <body>
@@ -36,23 +33,24 @@
         <!-- Custom Responsive Rules for the Background Image -->
         <style>
             .custom-masthead {
-                /* Default for laptops: Anchor the image to the top center */
-                background-position: center top !important; 
+                background-position: center center !important; 
             }
             .custom-heading-padding {
-                /* Default for laptops: Normal vertical spacing */
                 padding-top: 150px; 
             }
 
-            /* Rules strictly for mobile phones (screens smaller than 768px) */
+            /* Rules strictly for mobile phones */
             @media (max-width: 768px) {
                 .custom-masthead {
-                    /* Shifts the background to the right so your face isn't cut off on narrow screens */
-                    background-position: 82% top !important; 
+                    /* Pulls the image to the right (75%) and anchors it to the absolute TOP (0%) */
+                    background-position: 75% 0% !important; 
+                    /* Locks the header height to 85% of the phone screen */
+                    min-height: 85vh !important; 
                 }
                 .custom-heading-padding {
-                    /* Pushes the text down below the circle ONLY on phones */
-                    padding-top: 340px !important; 
+                    /* Forces the text to start past the halfway mark of the screen, clearing the circle entirely */
+                    padding-top: 55vh !important; 
+                    padding-bottom: 20px !important;
                 }
             }
         </style>
@@ -76,7 +74,6 @@
         <!-- Main Content-->
         <div class="container px-4 px-lg-5" style="max-width: 1200px;">
             <div class="row gx-4 gx-lg-5 justify-content-center">
-                <!-- Expanded from col-xl-7 to col-xl-10 to use the empty space -->
                 <div class="col-lg-11 col-xl-10">
                     
                     <section class="mb-5 mt-4">
