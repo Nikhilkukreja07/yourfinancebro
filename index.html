@@ -33,15 +33,31 @@
             </div>
         </nav>
         <!-- Page Header-->
+        <!-- Page Header-->
         <header class="masthead">
             <div class="container position-relative px-4 px-lg-5">
-                <div class="row gx-4 gx-lg-5">
-                    <div class="col-md-8 col-lg-7 col-xl-6">
-                        <div class="site-heading" style="text-align: left; padding-top: 50px;">
-                            <h1>Nikhil Kukreja</h1>
-                            <span class="subheading">MBA at IIM Shillong | S&P Global</span>
+                
+                <!-- The 'row' and 'align-items-center' perfectly centers the image and text vertically -->
+                <div class="row gx-4 gx-lg-5 align-items-center justify-content-center" style="padding-top: 40px; padding-bottom: 40px;">
+                    
+                    <!-- Profile Picture Column -->
+                    <!-- col-8 on phone (centered), col-md-4 on laptop (left side) -->
+                    <div class="col-8 col-sm-6 col-md-4 text-center mb-4 mb-md-0">
+                        <!-- 'img-fluid' automatically shrinks the image to fit the screen without breaking -->
+                        <!-- IMPORTANT: Replace the 'src' below with your actual profile picture file name! -->
+                        <img src="assets/img/PUT-YOUR-PICTURE-NAME-HERE.png" alt="Nikhil Kukreja" class="img-fluid rounded-circle shadow-lg" style="border: 3px solid rgba(255,255,255,0.3); max-width: 250px;">
+                    </div>
+
+                    <!-- Text Column -->
+                    <!-- col-12 on phone (takes full width), col-md-8 on laptop (sits next to image) -->
+                    <div class="col-12 col-md-8 text-center text-md-start">
+                        <div class="site-heading" style="padding: 0;">
+                            <!-- The 'clamp' function is magic: it tells the font to be large on laptops, but automatically shrink on iPhones -->
+                            <h1 style="font-size: clamp(2.5rem, 6vw, 4.5rem); font-weight: 800; color: #fff; text-shadow: 2px 2px 5px rgba(0,0,0,0.6); margin-bottom: 10px;">Nikhil Kukreja</h1>
+                            <span class="subheading" style="font-size: clamp(1.1rem, 3vw, 1.5rem); color: #f8f9fa; text-shadow: 1px 1px 4px rgba(0,0,0,0.8); font-weight: 400;">MBA at IIM Shillong | S&P Global</span>
                         </div>
                     </div>
+
                 </div>
             </div>
         </header>
