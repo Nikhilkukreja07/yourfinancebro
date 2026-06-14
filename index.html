@@ -35,6 +35,10 @@
             .custom-masthead {
                 background-position: center center !important; 
             }
+            .custom-row {
+                /* Laptop: Centers text vertically */
+                align-items: center; 
+            }
             .custom-heading-padding {
                 padding-top: 150px; 
             }
@@ -42,14 +46,18 @@
             /* Rules strictly for mobile phones */
             @media (max-width: 768px) {
                 .custom-masthead {
-                    /* Pulls the image to the right (75%) and anchors it to the absolute TOP (0%) */
-                    background-position: 75% 0% !important; 
-                    /* Locks the header height to 85% of the phone screen */
+                    /* Centers the image perfectly horizontally, anchors it to the bottom to leave room at the top */
+                    background-position: center bottom !important; 
                     min-height: 85vh !important; 
+                    padding-top: 0 !important; /* Overrides default template padding */
+                }
+                .custom-row {
+                    /* Mobile: Stops vertically centering the text so we can push it to the top */
+                    align-items: flex-start !important; 
                 }
                 .custom-heading-padding {
-                    /* Forces the text to start past the halfway mark of the screen, clearing the circle entirely */
-                    padding-top: 55vh !important; 
+                    /* Forces the text to start near the top, ABOVE the face */
+                    padding-top: 12vh !important; 
                     padding-bottom: 20px !important;
                 }
             }
@@ -57,8 +65,8 @@
 
         <!-- Page Header-->
         <header class="masthead custom-masthead">
-            <div class="container position-relative px-4 px-lg-5">
-                <div class="row gx-4 gx-lg-5 align-items-center">
+            <div class="container position-relative px-4 px-lg-5" style="height: 100%;">
+                <div class="row gx-4 gx-lg-5 custom-row" style="height: 100%;">
                     <div class="col-12">
                         
                         <div class="site-heading text-center text-md-start custom-heading-padding" style="padding-bottom: 40px;">
