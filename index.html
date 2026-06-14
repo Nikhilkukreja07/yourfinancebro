@@ -32,17 +32,38 @@
                 </div>
             </div>
         </nav>
+
+        <!-- Custom Responsive Rules for the Background Image -->
+        <style>
+            .custom-masthead {
+                /* Default for laptops: Anchor the image to the top center */
+                background-position: center top !important; 
+            }
+            .custom-heading-padding {
+                /* Default for laptops: Normal vertical spacing */
+                padding-top: 150px; 
+            }
+
+            /* Rules strictly for mobile phones (screens smaller than 768px) */
+            @media (max-width: 768px) {
+                .custom-masthead {
+                    /* Shifts the background to the right so your face isn't cut off on narrow screens */
+                    background-position: 82% top !important; 
+                }
+                .custom-heading-padding {
+                    /* Pushes the text down below the circle ONLY on phones */
+                    padding-top: 340px !important; 
+                }
+            }
+        </style>
+
         <!-- Page Header-->
-        <!-- Page Header-->
-        <!-- 'background-position: center top' ensures your head isn't cut off on small screens -->
-        <header class="masthead" style="background-position: center top;">
+        <header class="masthead custom-masthead">
             <div class="container position-relative px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5 align-items-center">
                     <div class="col-12">
                         
-                        <!-- Removed the broken image tag! -->
-                        <!-- Added 'padding-top: 220px' to physically shove the text below the circle -->
-                        <div class="site-heading text-center text-md-start" style="padding-top: 220px; padding-bottom: 40px;">
+                        <div class="site-heading text-center text-md-start custom-heading-padding" style="padding-bottom: 40px;">
                             <h1 style="font-size: clamp(2.5rem, 8vw, 4.5rem); font-weight: 800; color: #fff; text-shadow: 2px 2px 8px rgba(0,0,0,0.9); margin-bottom: 10px;">Nikhil Kukreja</h1>
                             <span class="subheading" style="font-size: clamp(1.1rem, 4vw, 1.5rem); color: #f8f9fa; text-shadow: 2px 2px 6px rgba(0,0,0,0.9); font-weight: 400;">MBA at IIM Shillong | S&P Global</span>
                         </div>
@@ -51,8 +72,8 @@
                 </div>
             </div>
         </header>
+
         <!-- Main Content-->
-        <<!-- Main Content-->
         <div class="container px-4 px-lg-5" style="max-width: 1200px;">
             <div class="row gx-4 gx-lg-5 justify-content-center">
                 <!-- Expanded from col-xl-7 to col-xl-10 to use the empty space -->
@@ -60,12 +81,10 @@
                     
                     <section class="mb-5 mt-4">
                         <h2 style="font-size: 2rem; font-weight: 700; margin-bottom: 20px;">Professional Profile</h2>
-                        <p>Welcome to my investment research platform.<p>
-
-                        </p>I am a finance professional with experience across private markets, corporate valuation, and fundamental equity research. My work focuses on understanding business models, analyzing competitive dynamics, building robust financial models, and evaluating companies through a long-term value investing lens.<p>
-                        <p>Currently, I am pursuing my MBA at Indian Institute of Management Shillong. Prior to this, I worked at S&P Global, where I analyzed private market transactions, company fundamentals, and industry developments across global markets.<p>
-
-                        </p>This website serves as a repository of my investment research, valuation models, and company analyses. Through detailed industry studies and institutional-grade investment theses, I aim to demonstrate a structured approach to business analysis and capital allocation.</p>
+                        <p>Welcome to my investment research platform.</p>
+                        <p>I am a finance professional with experience across private markets, corporate valuation, and fundamental equity research. My work focuses on understanding business models, analyzing competitive dynamics, building robust financial models, and evaluating companies through a long-term value investing lens.</p>
+                        <p>Currently, I am pursuing my MBA at Indian Institute of Management Shillong. Prior to this, I worked at S&P Global, where I analyzed private market transactions, company fundamentals, and industry developments across global markets.</p>
+                        <p>This website serves as a repository of my investment research, valuation models, and company analyses. Through detailed industry studies and institutional-grade investment theses, I aim to demonstrate a structured approach to business analysis and capital allocation.</p>
                     </section>
         
                     <hr class="my-4" />
@@ -97,6 +116,7 @@
                 </div>
             </div>
         </div>
+
         <!-- Footer-->
         <footer class="border-top">
             <div class="container px-4 px-lg-5">
@@ -117,6 +137,7 @@
                 </div>
             </div>
         </footer>
+        
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
