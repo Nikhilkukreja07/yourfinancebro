@@ -47,20 +47,22 @@
             /* Rules strictly for mobile phones */
             @media (max-width: 768px) {
                 .custom-masthead {
-                    /* Mobile: Anchors your face to the TOP of the screen so it isn't cut off */
-                    background-position: 95.5% top !important; 
+                    /* 82% pulls your face perfectly into the center horizontally. */
+                    /* 'bottom' anchors your suit to the bottom of the screen. */
+                    background-position: 95.5% bottom !important; 
                     min-height: 90vh !important; 
+                    /* Overrides the template's massive default gap at the top */
+                    padding-top: 40px !important; 
                 }
                 .custom-row {
-                    /* Mobile: Pushes the text safely to the BOTTOM of the screen */
-                    align-items: flex-end !important; 
-                    padding-bottom: 8vh !important;
+                    /* Tells the text to float to the absolute top of the box */
+                    align-items: flex-start !important; 
                 }
                 .custom-site-heading {
-                    /* Mobile: Kills default spacing to let the text rest perfectly on your dark suit */
-                    margin-top: 0 !important; 
-                    padding-top: 0 !important; 
-                    width: 100%;
+                    /* Kills all default padding, snapping the text directly under the navbar */
+                    margin-top: 2 !important; 
+                    padding-top: 1 !important; 
+                    padding-bottom: 0 !important;
                 }
             }
         </style>
