@@ -5,12 +5,28 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="Company Valuations and Investment Theses by Nikhil Kukreja" />
         <meta name="author" content="Nikhil Kukreja" />
-        <title>Valuation Reports | Nikhil Kukreja</title>
+        <title>Valuation Reports | TruValuation</title>
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
         <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css" />
         <link href="css/styles.css" rel="stylesheet" />
+        
+        <style>
+            /* Mobile Typography & Spacing Fixes */
+            @media (max-width: 768px) {
+                /* Overrides justified text on mobile to prevent massive gaps between words */
+                .analysis-section p, 
+                .analysis-section li {
+                    text-align: left !important;
+                }
+                /* Reduces the outer container margins to maximize phone screen real estate */
+                .container-fluid {
+                    padding-left: 12px !important;
+                    padding-right: 12px !important;
+                }
+            }
+        </style>
     </head>
     <body>
         <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
@@ -35,7 +51,7 @@
                     <div class="col-md-8 col-lg-7 col-xl-6">
                         <div class="site-heading" style="text-align: left; padding-top: 50px;">
                             <h1>Valuation Reports</h1>
-                            <span class="subheading">DCF Models, Investment Thesis, & Financial Research</span>
+                            <span class="subheading">DCF Models, Investment Theses, & Financial Research</span>
                         </div>
                     </div>
                 </div>
@@ -45,9 +61,195 @@
         <div class="container-fluid px-4 px-xl-5 mb-5 mt-4" style="max-width: 1400px;">
             <div class="row justify-content-center">
                 
+                <!-- ============================== -->
+                <!-- FULL WIDTH ROW: ZEPTO          -->
+                <!-- ============================== -->
                 <div class="col-12 mb-5">
                     <div class="card h-100 shadow-sm border-0" style="background-color: #f8f9fa;">
-                        <div class="card-body" style="padding: 40px;">
+                        <!-- Changed from hardcoded padding to responsive padding classes (p-3 p-md-5) -->
+                        <div class="card-body p-3 p-md-5">
+                            <h2 class="card-title text-start mb-4" style="font-weight: 700; color: #212529; font-size: 2.2rem;">Zepto</h2>
+                            
+                            <h5 class="text-start" style="font-size: 1.1rem; font-weight: 600; color: #6c757d;">Pre-IPO DCF Valuation Snapshot</h5>
+                            
+                            <div class="mb-4 shadow-sm" style="cursor: pointer; border: 1px solid #ced4da; border-radius: 5px; overflow: hidden;" data-bs-toggle="modal" data-bs-target="#zeptoModal">
+                                <img src="assets/img/zepto-dcf.png" alt="Zepto DCF Model Screenshot" class="img-fluid w-100" style="object-fit: cover; height: auto; max-height: 450px; border-bottom: 1px solid #ced4da; background-color: #e9ecef;">
+                                <div class="text-center bg-light py-2" style="font-size: 0.9rem; color: #6c757d; font-weight: 600;">
+                                    <i class="fas fa-search-plus"></i> Click to Enlarge Screenshot
+                                </div>
+                            </div>
+
+                            <div class="text-start mb-4">
+                                <a href="assets/models/Zepto.xlsx" download class="btn btn-success px-4 py-2" style="background-color: #198754; border: none; font-weight: 600;">
+                                    <i class="fas fa-file-excel" style="margin-right: 8px;"></i> Download Excel Model
+                                </a>
+                            </div>
+
+                            <button class="btn btn-outline-dark w-100 text-start py-3" type="button" data-bs-toggle="collapse" data-bs-target="#zeptoAnalysis" aria-expanded="false" aria-controls="zeptoAnalysis" style="font-size: 1.1rem; font-weight: 600;">
+                                View Detailed Analysis <i class="fas fa-chevron-down float-end mt-1"></i>
+                            </button>
+                            
+                            <div class="collapse mt-3" id="zeptoAnalysis">
+                                <!-- Changed from hardcoded padding to responsive padding classes (p-3 p-md-4) -->
+                                <div class="card card-body border-0 shadow-sm p-3 p-md-4" style="background-color: #ffffff; border-radius: 8px;">
+                                    <h3 class="text-start border-bottom pb-2 mb-4" style="font-size: 1.5rem; font-weight: 700; color: #1e293b;">Zepto Valuation: Understanding India's Quick Commerce Opportunity</h3>
+                                    
+                                    <div class="analysis-section mb-4">
+                                        <h4 style="font-size: 1.3rem; font-weight: 700; color: #0f172a; margin-bottom: 15px;">Part I: Understanding Zepto's Business</h4>
+                                        
+                                        <div class="ps-3 ps-md-4 border-start border-3 mb-4 mt-4" style="border-color: #5B21B6 !important;">
+                                            <h5 style="font-size: 1.1rem; font-weight: 700; color: #5B21B6; margin-bottom: 6px;">What is Zepto?</h5>
+                                            <p style="font-size: 1rem; color: #475569; line-height: 1.7; text-align: justify; margin-bottom: 8px;">Zepto is one of India's leading quick commerce platforms, operating a network of dark stores that enable delivery of groceries, daily essentials, personal care products, electronics, and other convenience items within minutes. Unlike traditional e-commerce platforms that rely on centralized warehouses, Zepto's business model is built around hyperlocal inventory fulfillment, allowing it to offer significantly faster delivery times.</p>
+                                            <p style="font-size: 1rem; color: #475569; line-height: 1.7; text-align: justify; margin-bottom: 0;">The quick commerce industry has evolved beyond being merely a grocery delivery service. Platforms such as Zepto are increasingly becoming digital convenience ecosystems where consumers purchase a wide range of products ranging from fruits and vegetables to smartphones and healthcare products.</p>
+                                        </div>
+
+                                        <div class="ps-3 ps-md-4 border-start border-3 mb-4" style="border-color: #5B21B6 !important;">
+                                            <h5 style="font-size: 1.1rem; font-weight: 700; color: #5B21B6; margin-bottom: 6px;">The Indian Quick Commerce Opportunity</h5>
+                                            <p style="font-size: 1rem; color: #475569; line-height: 1.7; text-align: justify; margin-bottom: 8px;">The foundation of this valuation rests on the belief that India's retail market is undergoing a structural transformation. India's retail market is estimated at approximately USD 1.06 trillion in 2025 and is projected to reach nearly USD 2.63 trillion by 2035. However, the real opportunity lies not in retail growth alone but in the rapid migration of consumer spending toward online channels.</p>
+                                            <p style="font-size: 1rem; color: #475569; line-height: 1.7; text-align: justify; margin-bottom: 8px;">To estimate future online penetration, the model uses a convergence framework based on China's current digital retail landscape. Rather than assuming arbitrary penetration rates, China's category-level online adoption was used as a reference point after adjusting for:</p>
+                                            <ul style="font-size: 1rem; color: #475569; padding-left: 20px; margin-bottom: 8px; line-height: 1.7;">
+                                                <li>India's projected GDP per capita in 2035</li>
+                                                <li>Expected retail expenditure per capita</li>
+                                                <li>Smartphone penetration</li>
+                                                <li>Digital adoption trends</li>
+                                            </ul>
+                                            <p style="font-size: 1rem; color: #475569; line-height: 1.7; text-align: justify; margin-bottom: 0;">Using this framework, the addressable quick commerce market expands from approximately USD 15.2 billion in 2025 to nearly USD 147 billion by 2035.</p>
+                                        </div>
+
+                                        <div class="ps-3 ps-md-4 border-start border-3 mb-4" style="border-color: #5B21B6 !important;">
+                                            <h5 style="font-size: 1.1rem; font-weight: 700; color: #5B21B6; margin-bottom: 6px;">Why Market Share Declines Despite Growth</h5>
+                                            <p style="font-size: 1rem; color: #475569; line-height: 1.7; text-align: justify; margin-bottom: 8px;">The model assumes Zepto's market share gradually declines from approximately 19% to 15% over the forecast period. This assumption reflects increasing competition from:</p>
+                                            <ul style="font-size: 1rem; color: #475569; padding-left: 20px; margin-bottom: 8px; line-height: 1.7;">
+                                                <li>Blinkit</li>
+                                                <li>Swiggy Instamart</li>
+                                                <li>Amazon &amp; Flipkart Minutes</li>
+                                                <li>Future market entrants</li>
+                                            </ul>
+                                            <p style="font-size: 1rem; color: #475569; line-height: 1.7; text-align: justify; margin-bottom: 0;">While Zepto remains a leading player, a larger and more competitive market is expected to reduce concentration levels over time. Despite lower market share, the significant expansion of the overall market allows Zepto's Net Revenue Value (NRV) to increase from ₹127 billion to nearly ₹1.88 trillion by FY2035.</p>
+                                        </div>
+                                    </div>
+
+                                    <hr class="my-5" style="border-color: #cbd5e1;" />
+
+                                    <div class="analysis-section mb-4">
+                                        <h4 style="font-size: 1.3rem; font-weight: 700; color: #0f172a; margin-bottom: 15px;">Part II: The Valuation Story</h4>
+                                        <p style="font-size: 1rem; font-weight: 600; color: #334155; line-height: 1.7; margin-bottom: 20px;">Revenue Growth is Driven by Three Engines:</p>
+                                        
+                                        <div class="mb-4">
+                                            <h5 style="font-size: 1.1rem; font-weight: 700; color: #0f172a; margin-bottom: 6px;">1. Market Expansion</h5>
+                                            <p style="font-size: 1rem; color: #475569; line-height: 1.7; text-align: justify;">The primary growth engine is the rapid increase in India's quick commerce market size. TAM expands from approximately USD 15 billion to USD 147 billion over the forecast period, representing one of the fastest-growing segments within Indian retail.</p>
+                                        </div>
+                                        
+                                        <div class="mb-4">
+                                            <h5 style="font-size: 1.1rem; font-weight: 700; color: #0f172a; margin-bottom: 6px;">2. Increasing Take Rates</h5>
+                                            <p style="font-size: 1rem; color: #475569; line-height: 1.7; text-align: justify; margin-bottom: 8px;">Zepto's revenue model is expected to evolve as the company increases the proportion of inventory-led sales. Historically, quick commerce platforms have operated through a mix of marketplace transactions and inventory-led sales.</p>
+                                            <ul style="font-size: 1rem; color: #475569; padding-left: 20px; margin-bottom: 8px; line-height: 1.7;">
+                                                <li class="mb-1">Inventory-led transactions allow a greater portion of merchandise value to be recognized as revenue.</li>
+                                                <li class="mb-1">As Zepto follows a model similar to Blinkit's evolving operating structure, the effective take rate rises from approximately 82% to 92.5% by FY2035.</li>
+                                            </ul>
+                                            <p style="font-size: 1rem; color: #475569; line-height: 1.7; text-align: justify;">This results in total quick commerce revenue increasing from approximately ₹105 billion to ₹1.74 trillion.</p>
+                                        </div>
+
+                                        <div class="mb-4">
+                                            <h5 style="font-size: 1.1rem; font-weight: 700; color: #0f172a; margin-bottom: 6px;">3. Advertising Monetization</h5>
+                                            <p style="font-size: 1rem; color: #475569; line-height: 1.7; text-align: justify; margin-bottom: 8px;">One of the most important long-term drivers is advertising revenue. As user traffic grows, consumer brands increasingly compete for visibility on the platform through sponsored listings, search placements, category advertisements, and promotional campaigns.</p>
+                                            <ul style="font-size: 1rem; color: #475569; padding-left: 20px; margin-bottom: 8px; line-height: 1.7;">
+                                                <li class="mb-1">Advertising revenue is forecast using projected industry Active Transacting Users (ATUs), combined with Zepto's expected market share of users.</li>
+                                                <li class="mb-1">Zepto's advertising market share increases from roughly 15% to 18% over the forecast period.</li>
+                                            </ul>
+                                            <p style="font-size: 1rem; color: #475569; line-height: 1.7; text-align: justify;">Advertising revenue reaches approximately ₹69 billion by FY2035.</p>
+                                        </div>
+
+                                        <div class="mb-4 mt-5">
+                                            <h5 style="font-size: 1.2rem; font-weight: 700; color: #0f172a; margin-bottom: 15px; border-bottom: 1px solid #e2e8f0; padding-bottom: 5px;">The Path to Profitability</h5>
+                                            <p style="font-size: 1rem; color: #475569; line-height: 1.7; text-align: justify;">A common criticism of quick commerce businesses is that they struggle to achieve sustainable profitability. This model separates operating profitability into two layers:</p>
+                                            
+                                            <h6 style="font-size: 1rem; font-weight: 700; color: #334155; margin-top: 15px; margin-bottom: 6px;">Layer 1: Core Commerce EBITDA</h6>
+                                            <p style="font-size: 1rem; color: #475569; line-height: 1.7; text-align: justify; margin-bottom: 8px;">The underlying quick commerce business reaches an EBITDA margin of approximately 4.5% by FY2035. This improvement is driven by:</p>
+                                            <ul style="font-size: 1rem; color: #475569; padding-left: 20px; margin-bottom: 15px; line-height: 1.7;">
+                                                <li>Higher order density &amp; better dark store utilization</li>
+                                                <li>Improved supply chain efficiency</li>
+                                                <li>Reduced delivery cost per order</li>
+                                                <li>Lower customer acquisition intensity</li>
+                                            </ul>
+
+                                            <h6 style="font-size: 1rem; font-weight: 700; color: #334155; margin-bottom: 6px;">Layer 2: Advertising Contribution</h6>
+                                            <p style="font-size: 1rem; color: #475569; line-height: 1.7; text-align: justify;">Advertising revenue carries extremely high incremental margins because the platform infrastructure already exists. As advertising scales, overall EBITDA margin expands from the core 4.5% level to approximately 8.1%. This distinction is important because the model does not assume grocery delivery alone can generate 8% margins. Instead, the additional profitability comes from platform monetization. By FY2035, EBITDA reaches approximately ₹147 billion.</p>
+                                        </div>
+                                    </div>
+
+                                    <hr class="my-5" style="border-color: #cbd5e1;" />
+
+                                    <div class="analysis-section">
+                                        <h4 style="font-size: 1.3rem; font-weight: 700; color: #0f172a; margin-bottom: 15px;">Part III: DCF Valuation</h4>
+                                        
+                                        <h5 style="font-size: 1.1rem; font-weight: 700; color: #0f172a; margin-top: 15px; margin-bottom: 8px;">Cost of Capital &amp; Free Cash Flow</h5>
+                                        <p style="font-size: 1rem; color: #475569; line-height: 1.7; text-align: justify;">The valuation uses a Discounted Cash Flow (DCF) framework with a weighted average cost of capital estimated at 10.38%. The cost of equity is derived using CAPM and a bottom-up beta approach, utilizing peer companies including Eternal Limited, Swiggy, DoorDash, Meituan, Instacart, Coupang, and Grab Holdings. Each company's unlevered beta was weighted according to its exposure to quick commerce activities, resulting in a relevered adjusted beta of approximately 1.26.</p>
+                                        <p style="font-size: 1rem; color: #475569; line-height: 1.7; text-align: justify;">The model projects free cash flow through FY2035 based on operating profit growth, working capital requirements, capital expenditure needs, and tax assumptions. Free cash flow remains negative during the expansion phase before turning strongly positive as operating leverage improves.</p>
+                                        
+                                        <h5 style="font-size: 1.1rem; font-weight: 700; color: #0f172a; margin-top: 20px; margin-bottom: 8px;">Terminal Value Assumptions</h5>
+                                        <p style="font-size: 1rem; color: #475569; line-height: 1.7; text-align: justify; margin-bottom: 8px;">The valuation applies a terminal growth rate of 7%. This assumption reflects:</p>
+                                        <ul style="font-size: 1rem; color: #475569; padding-left: 20px; margin-bottom: 20px; line-height: 1.7;">
+                                            <li>Long-term growth of Indian retail</li>
+                                            <li>Continued online penetration gains</li>
+                                            <li>Structural expansion of quick commerce within overall retail spending</li>
+                                        </ul>
+
+                                        <h5 style="font-size: 1.1rem; font-weight: 700; color: #0f172a; margin-top: 20px; margin-bottom: 12px;">Valuation Results (EV to Equity Bridge)</h5>
+                                        
+                                        <div class="table-responsive mb-4" style="max-width: 500px;">
+                                            <table class="table table-bordered table-sm" style="font-size: 0.95rem; color: #334155;">
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="fw-bold bg-light">DCF Enterprise Value</td>
+                                                        <td class="text-end fw-bold">₹752.2 billion</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Add: Investments</td>
+                                                        <td class="text-end text-success">+ ₹71.0 billion</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Less: Debt</td>
+                                                        <td class="text-end text-danger">- ₹27.1 billion</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Add: Cash</td>
+                                                        <td class="text-end text-success">+ ₹9.7 billion</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Add: IPO Proceeds</td>
+                                                        <td class="text-end text-success">+ ₹80.1 billion</td>
+                                                    </tr>
+                                                    <tr class="table-dark text-white">
+                                                        <td class="fw-bold">Implied Equity Value</td>
+                                                        <td class="text-end fw-bold">₹885.9 billion</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <p style="font-size: 1rem; color: #475569; line-height: 1.7; text-align: justify;">At an exchange rate of ₹85 per USD, the implied equity valuation is approximately <strong>USD 10.4 billion</strong>.</p>
+
+                                        <h5 style="font-size: 1.1rem; font-weight: 700; color: #0f172a; margin-top: 25px; margin-bottom: 8px;">Key Investment Thesis</h5>
+                                        <p style="font-size: 1rem; color: #475569; line-height: 1.7; text-align: justify; margin-bottom: 8px;">The valuation is ultimately driven by four assumptions:</p>
+                                        <ol style="font-size: 1rem; color: #475569; padding-left: 20px; margin-bottom: 15px; line-height: 1.7;">
+                                            <li class="mb-1">Zepto maintains a leading market position with approximately 15% market share.</li>
+                                            <li class="mb-1">Revenue scales through higher inventory-led penetration and improved take rates.</li>
+                                            <li class="mb-1">Advertising monetization transforms the platform economics and drives EBITDA margin expansion from 4.5% to 8.1%.</li>
+                                            <li class="mb-1">If these assumptions materialize, Zepto has the potential to become one of India's most valuable consumer technology platforms over the coming decade.</li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ============================== -->
+                <!-- FULL WIDTH ROW: PAYTM          -->
+                <!-- ============================== -->
+                <div class="col-12 mb-5">
+                    <div class="card h-100 shadow-sm border-0" style="background-color: #f8f9fa;">
+                        <div class="card-body p-3 p-md-5">
                             <h2 class="card-title text-start mb-4" style="font-weight: 700; color: #212529; font-size: 2.2rem;">Paytm (One97)</h2>
                             
                             <h5 class="text-start" style="font-size: 1.1rem; font-weight: 600; color: #6c757d;">DCF Model Snapshot</h5>
@@ -70,13 +272,13 @@
                             </button>
                             
                             <div class="collapse mt-3" id="paytmAnalysis">
-                                <div class="card card-body border-0 shadow-sm" style="background-color: #ffffff; padding: 35px; border-radius: 8px;">
+                                <div class="card card-body border-0 shadow-sm p-3 p-md-4" style="background-color: #ffffff; border-radius: 8px;">
                                     
                                     <div class="analysis-section mb-4">
                                         <h4 style="font-size: 1.3rem; font-weight: 700; color: #0f172a; margin-bottom: 15px; border-bottom: 2px solid #e2e8f0; padding-bottom: 8px;">Part 1: Understanding the Business — What Does Paytm Actually Do?</h4>
                                         <p style="font-size: 1rem; color: #334155; line-height: 1.7; text-align: justify;">Before we value any company, we need to understand where its money comes from and what structural advantages — if any — allow it to sustain and grow those cash flows. Paytm operates across three distinct business segments, each with a different revenue profile, margin structure, and growth trajectory. Getting this right is the foundation of the entire model.</p>
                                         
-                                        <div class="ps-4 border-start border-3 border-primary mb-4 mt-4">
+                                        <div class="ps-3 ps-md-4 border-start border-3 border-primary mb-4 mt-4">
                                             <h5 style="font-size: 1.1rem; font-weight: 700; color: #1e3a8a; margin-bottom: 8px;">Segment 1: Payment Services</h5>
                                             <p style="font-size: 1rem; color: #475569; line-height: 1.7; text-align: justify;">Payment services is Paytm's oldest and most recognizable business. The company facilitates both person-to-person (P2P) and person-to-merchant (P2M) transactions through its app and merchant network.</p>
                                             <p style="font-size: 1rem; color: #475569; line-height: 1.7; text-align: justify;">The revenue nuance most people miss: Paytm earns zero revenue on P2P transactions — these are essentially a user acquisition and retention tool. Revenue only kicks in when Paytm acts as a financial intermediary in P2M transactions, earning what is called Merchant Discount Rate (MDR). However, a critical structural headwind exists: MDR has been waived by the government on UPI transactions, which are now the dominant mode of digital payments in India. This means that for the largest and fastest-growing chunk of digital payment volume, Paytm currently earns nothing in the traditional sense. The business therefore splits into three meaningful sub-lines:</p>
@@ -87,7 +289,7 @@
                                             </ul>
                                         </div>
 
-                                        <div class="ps-4 border-start border-3 border-success mb-4">
+                                        <div class="ps-3 ps-md-4 border-start border-3 border-success mb-4">
                                             <h5 style="font-size: 1.1rem; font-weight: 700; color: #14532d; margin-bottom: 8px;">Segment 2: Distribution of Financial Services</h5>
                                             <p style="font-size: 1rem; color: #475569; line-height: 1.7; text-align: justify;">This is where Paytm's structural positioning as a distribution platform — rather than a lender — becomes most valuable. Paytm does not take credit risk on its books. Instead, it connects its 87 million merchant base and 77 million Monthly Transacting Users (MTUs) with lending and financial services partners, earning a fee or commission for distribution. This makes the economics fundamentally different from an NBFC: the revenue is high-margin, capital-light, and doesn't blow up when credit cycles turn. The segment in FY26 breaks into three sub-streams, based on Q3 FY26 mix:</p>
                                             <ul style="font-size: 1rem; color: #475569; padding-left: 20px; margin-bottom: 12px; line-height: 1.7;">
@@ -98,7 +300,7 @@
                                             <p style="font-size: 1rem; color: #475569; line-height: 1.7; text-align: justify; margin-bottom: 0;">The financial services segment as a whole is the highest-margin business in Paytm's portfolio. Unlike payment processing where Paytm competes with network costs and payment gateway fees, here the contribution to the bottom line is structurally superior — the cost of acquiring these customers is largely already sunk through the payments platform.</p>
                                         </div>
 
-                                        <div class="ps-4 border-start border-3 border-secondary mb-3">
+                                        <div class="ps-3 ps-md-4 border-start border-3 border-secondary mb-3">
                                             <h5 style="font-size: 1.1rem; font-weight: 700; color: #334155; margin-bottom: 8px;">Segment 3: Marketing Services</h5>
                                             <p style="font-size: 1rem; color: #475569; line-height: 1.7; text-align: justify;">This is a relatively straightforward and explicitly non-core segment, as management has communicated in recent concalls. Following the sale of Paytm's ticketing services business to Eternal (formerly Zomato), the high-growth engine that was once in this segment no longer exists under Paytm's roof. What remains is essentially an advertising and cross-sell monetization business — Paytm earns revenue by monetizing its user base through ads, promotional tie-ups, and branded campaigns shown to MTUs on its platform.</p>
                                             <p style="font-size: 1rem; color: #475569; line-height: 1.7; text-align: justify;">The mechanics are simple: Revenue = MTUs × Revenue per MTU. MTUs stood at 77 million in FY26, and revenue per MTU was approximately ₹31 per quarter. Management has guided for revenue per MTU to stabilize and grow modestly from here. The model assumes 4% annual growth in revenue per MTU, with MTUs themselves growing to approximately 126 million by FY35 as internet and fintech penetration deepens.</p>
@@ -161,9 +363,12 @@
                     </div>
                 </div>
 
+                <!-- ============================== -->
+                <!-- FULL WIDTH ROW: ETERNAL        -->
+                <!-- ============================== -->
                 <div class="col-12 mb-5">
                     <div class="card h-100 shadow-sm border-0" style="background-color: #f8f9fa;">
-                        <div class="card-body" style="padding: 40px;">
+                        <div class="card-body p-3 p-md-5">
                             <h2 class="card-title text-start mb-4" style="font-weight: 700; color: #212529; font-size: 2.2rem;">Eternal</h2>
                             
                             <h5 class="text-start" style="font-size: 1.1rem; font-weight: 600; color: #6c757d;">DCF Model Snapshot</h5>
@@ -186,29 +391,29 @@
                             </button>
                             
                             <div class="collapse mt-3" id="eternalAnalysis">
-                                <div class="card card-body border-0 shadow-sm" style="background-color: #ffffff; padding: 35px; border-radius: 8px;">
+                                <div class="card card-body border-0 shadow-sm p-3 p-md-4" style="background-color: #ffffff; border-radius: 8px;">
                                     <h3 class="text-start border-bottom pb-2 mb-4" style="font-size: 1.5rem; font-weight: 700; color: #1e293b;">Eternal Limited — DCF Valuation: A Complete Walkthrough</h3>
                                     
                                     <div class="analysis-section mb-4">
                                         <h4 style="font-size: 1.3rem; font-weight: 700; color: #0f172a; margin-bottom: 12px;">Part 1: Understanding the Business</h4>
                                         <p style="font-size: 1rem; color: #334155; line-height: 1.7; text-align: justify;">Eternal Limited (NSE: ETERNAL) is the parent company of what most people know as Zomato. The rebranding reflects a broader identity: this is no longer just a food delivery company. Eternal operates four distinct business segments, each with its own unit economics, growth trajectory, and market structure.</p>
                                         
-                                        <div class="ps-4 border-start border-3 border-danger mb-4 mt-4">
+                                        <div class="ps-3 ps-md-4 border-start border-3 border-danger mb-4 mt-4">
                                             <h5 style="font-size: 1.1rem; font-weight: 700; color: #b91c1c; margin-bottom: 6px;">Food Delivery (Zomato)</h5>
                                             <p style="font-size: 1rem; color: #475569; line-height: 1.7; text-align: justify; margin-bottom: 0;">This is the original and most mature segment. It operates as a marketplace — Eternal doesn't own kitchens or employ delivery partners full-time. It brings together restaurants (who pay commission), delivery partners (who earn per order), and customers (who pay platform and delivery fees, and optionally subscribe to Zomato Gold). Revenue is recognised as a "take rate" on Net Order Value (NOV) — the gross value of orders placed on the platform. In FY25, food delivery NOV stood at ₹32,862 Cr, and the take rate — adjusted revenue as a percentage of NOV — was approximately 28.7%. The four revenue streams are commission (~primary), advertising and promotions (restaurants paying for visibility), Zomato Gold subscriptions, and delivery fees.</p>
                                         </div>
 
-                                        <div class="ps-4 border-start border-3 border-warning mb-4">
+                                        <div class="ps-3 ps-md-4 border-start border-3 border-warning mb-4">
                                             <h5 style="font-size: 1.1rem; font-weight: 700; color: #b45309; margin-bottom: 6px;">Quick Commerce (Blinkit)</h5>
                                             <p style="font-size: 1rem; color: #475569; line-height: 1.7; text-align: justify; margin-bottom: 0;">This is the high-growth segment and the most structurally complex one to model. Blinkit operates dark stores — small urban warehouses from which groceries and essentials are delivered in under 10 minutes. The single most important development in FY25-26 was Blinkit's shift from a marketplace model to an inventory-led model. Under the old model, Blinkit earned ~23% commission on NOV. Under the new model, Blinkit actually purchases and owns the inventory, so revenue now approximates full NOV (~93-95%). This inflated the revenue line dramatically — from ₹1,709 Cr in Q4 FY25 to ₹9,891 Cr in Q2 FY26 and ₹12,256 Cr in Q3 FY26 — while simultaneously introducing COGS on the books. The NOV for quick commerce in FY25 was ₹22,371 Cr, and Blinkit currently holds approximately 50% market share in Indian quick commerce, with stores at ~2,027 as of Q3 FY26.</p>
                                         </div>
 
-                                        <div class="ps-4 border-start border-3 mb-4" style="border-color: #6366f1 !important;">
+                                        <div class="ps-3 ps-md-4 border-start border-3 mb-4" style="border-color: #6366f1 !important;">
                                             <h5 style="font-size: 1.1rem; font-weight: 700; color: #4338ca; margin-bottom: 6px;">Going Out (District)</h5>
                                             <p style="font-size: 1rem; color: #475569; line-height: 1.7; text-align: justify; margin-bottom: 0;">This is the newest strategic pillar, launched in November 2024 after Eternal acquired Paytm's ticketing subsidiaries for ₹2,048 Cr. District covers four sub-segments: movie ticketing (competing directly with BookMyShow), live events (concerts, comedy, theatre — now India's second-largest events platform), sports ticketing (IPL, ISL, PKL), and dining out (restaurant discovery and table reservations). District's revenue model is a take rate on NOV — ticketing commission, convenience fees, advertising from venues, and dining reservation fees. FY25 NOV was ₹6,619 Cr, and management has guided for District to become a $3B NOV business with 5% Adjusted EBITDA margin by FY30.</p>
                                         </div>
 
-                                        <div class="ps-4 border-start border-3 border-success mb-3">
+                                        <div class="ps-3 ps-md-4 border-start border-3 border-success mb-3">
                                             <h5 style="font-size: 1.1rem; font-weight: 700; color: #15803d; margin-bottom: 6px;">B2B Supplies (Hyperpure)</h5>
                                             <p style="font-size: 1rem; color: #475569; line-height: 1.7; text-align: justify; margin-bottom: 0;">This is Eternal's farm-to-fork supply chain arm, serving restaurants directly. Hyperpure sources vegetables, dairy, meat, and other perishables directly from farmers and delivers them to over 1 lakh partner restaurants across 130+ cities. Revenue is essentially 100% of NOV (it's a direct supply business, not a marketplace). Core restaurant revenue in FY25 was ₹2,664 Cr, growing at ~95% YoY in FY25. An important modelling note: the non-restaurant B2B buyer business (non-core) is being scaled down to zero per management guidance, as it competes with Blinkit's own inventory transition. Only the core restaurant business is forecast going forward.</p>
                                         </div>
@@ -283,6 +488,19 @@
                     </div>
                 </div>
 
+            </div>
+        </div>
+
+        <div class="modal fade" id="zeptoModal" tabindex="-1" aria-labelledby="zeptoModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl modal-dialog-centered">
+                <div class="modal-content border-0 bg-transparent">
+                    <div class="modal-header border-0 pb-0 justify-content-end">
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close" style="background-color: rgba(0,0,0,0.5); border-radius: 50%; padding: 10px; margin-right: -10px; margin-top: -10px;"></button>
+                    </div>
+                    <div class="modal-body p-0">
+                        <img src="assets/img/zepto-dcf.png" alt="Zepto DCF Model Full Size" class="img-fluid w-100 rounded shadow-lg">
+                    </div>
+                </div>
             </div>
         </div>
 
